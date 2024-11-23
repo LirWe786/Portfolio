@@ -322,7 +322,7 @@ nav ul {
     width: 50vw;
     height: 100%;
     display: flex;
-  
+
     flex-direction: column;
     justify-content: center;
     align-items: space-between;
@@ -401,7 +401,7 @@ nav ul {
 }
 
 .contacts_data {
-   width: 100%;
+    width: 100%;
     font-size: 2rem;
     font-family: var(--accent-font-family);
     display: flex;
@@ -525,28 +525,32 @@ nav ul {
         width: 80vw;
         margin: 0 auto;
     }
+
     /* main */
     .main_preview_page {
         height: 60vh;
         margin-bottom: 5%;
     }
+
     .main_preview_page_title {
         font-size: 2rem;
         margin-bottom: 20%;
     }
+
     /* design elements */
     #disign_element1 {
         width: 60vw;
         left: calc(50% - 30vw);
         top: calc(50% - 15vh);
     }
-    /* skills */ 
-   
+
+    /* skills */
+
     .main_skills {
         width: 100%;
         height: 100%;
     }
-    
+
     .map_element {
         width: 15px;
         height: 15px;
@@ -554,20 +558,20 @@ nav ul {
         /* background-color: #00EC34; */
         background-color: var(--secondary-color);
     }
-    
+
     .map_line {
         width: 2px;
         height: 30vh;
         background-color: grey;
         margin-left: 2%;
     }
-    
+
     .map_name {
         color: white;
         font-family: var(--accent-font-family);
         font-size: 0.8rem;
     }
-    
+
     .map_circle {
         display: flex;
         justify-content: center;
@@ -575,13 +579,14 @@ nav ul {
         align-items: center;
         justify-content: space-between;
     }
-    
+
     .road_map {
         display: flex;
         flex-direction: column;
         width: 300px;
-    
+
     }
+
     .skills {
         width: 30vw;
         height: 100%;
@@ -592,5 +597,46 @@ nav ul {
         gap: 2px;
         opacity: 1;
         /* background-color: #cca33bd4; */
+    }
+
+    .html_p,
+    .desing_p {
+        font-size: 0.8rem;
+    }
+
+    .cursor_aura,
+    .cursor_center {
+        display: none;
+    }
+
+    .map_name {
+        margin-right: 60%;
+    }
+
+    .tools-div-p {
+        margin: 0;
+    }
+
+    .contacts {
+        height: 50%;
+    }
+
+    .contact-btn {
+        display: none;
+
+    }
+
+    .contac_p {
+        font-size: 1.6rem;
+    }
+
+    .contacts-email,
+    .contacs-number {
+        font-size: 0.8rem;
+    }
+
+    .end_p {
+        font-size: 1.6rem;
+        margin: 0;
     }
 }
