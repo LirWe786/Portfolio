@@ -76,6 +76,7 @@ a {
     border: none;
     outline: none;
     cursor: none;
+    display: none;
 }
 
 .header_menu img {
@@ -93,6 +94,48 @@ nav ul {
     text-transform: uppercase;
     font-size: 0.8rem;
     justify-content: space-between;
+}
+
+.contact-btn {
+    border: none;
+    background: none;
+    color: var(--secondary-color);
+    font-size: 1.2rem;
+    font-family: var(--accent-font-family);
+    margin: 0;
+    padding: 0;
+}
+
+.contact-btn:hover {
+
+    color: #e8ba44;
+    text-decoration: underline;
+
+}
+
+.contact-input {
+    border: none;
+    width: 20%;
+    height: 3%;
+    border-radius: 3px;
+    font-family: var(--accent-font-family);
+    font-size: var(--main-font-size);
+}
+
+.message-btn {
+    width: 12%;
+    height: 3%;
+    background-color: var(--secondary-color);
+    border: none;
+    font-size: var(--main-font-size);
+    font-family: var(--accent-font-family);
+    color: white;
+}
+
+.message-btn:hover {
+
+    border: 1px solid white;
+
 }
 
 /* main */
@@ -150,8 +193,6 @@ nav ul {
     border-radius: 50%;
     /* background-color: #00EC34; */
     background-color: var(--secondary-color);
-
-
 }
 
 .map_line {
@@ -209,7 +250,8 @@ nav ul {
 }
 
 /* menu */
-.close_menu {
+.close_menu,
+.close-contact-window {
     background: none;
     border: none;
     outline: none;
@@ -220,7 +262,8 @@ nav ul {
 
 }
 
-.menu {
+.menu,
+.contact-window {
     width: 100vw;
     height: 100vh;
     background-color: rgba(0, 0, 0, 0.462);
@@ -257,6 +300,7 @@ nav ul {
 .skills_languages,
 .skills_design,
 .other {
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -278,6 +322,7 @@ nav ul {
     width: 50vw;
     height: 100%;
     display: flex;
+  
     flex-direction: column;
     justify-content: center;
     align-items: space-between;
@@ -292,6 +337,7 @@ nav ul {
     align-items: space-between;
     gap: 20%;
     margin-top: 5%;
+    flex-wrap: wrap;
 }
 
 .animationBaseClass {
@@ -307,7 +353,8 @@ nav ul {
 }
 
 .skills_languages_divs,
-.AI_languages_divs {
+.AI_languages_divs,
+.tools-div {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -320,12 +367,29 @@ nav ul {
     align-items: center;
     justify-content: center;
     gap: 10%;
+    width: 100%;
 }
 
-.desin_p {
+.rudixUi-img {
+    transform: rotate(-15deg);
+}
+
+.desing_p {
     color: white;
     font-family: var(--accent-font-family);
     font-size: 2rem;
+}
+
+.other-div {
+    width: 100%;
+}
+
+.odsidian-div {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5%;
 }
 
 /* cantacts */
@@ -337,101 +401,88 @@ nav ul {
 }
 
 .contacts_data {
-    margin-left: 55vw;
+   width: 100%;
     font-size: 2rem;
     font-family: var(--accent-font-family);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
 }
 
 .contac_p {
     font-size: 4rem;
     font-family: var(--accent-font-family);
-     
-
-    background-image:linear-gradient(90deg,blue,orange,yellow);
-    background-clip:text;
-    color: transparent;
+    color: var(--secondary-color);
 }
+
 /* end */
-.EndSection{
+.EndSection {
     width: 100%;
     height: 50vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    
+
 }
-.end_p{
-    color:white;
+
+.end_p {
+    color: white;
     font-size: 6rem;
     font-family: var(--accent-font-family);
-    
+
 }
-.contacts-email{
+
+.contacts-email,
+.contacs-number {
     position: relative;
     transition: all .3s ease;
     cursor: pointer;
 }
 
-.contacts-email:after{
-  content: '';
-  width: 24.5vw;
-  height: 7px;
-  opacity: 0.5;
-  position: absolute;
-  background-color: blue;
-  bottom: 0;
-  left: 0;
-  transition: all .3s ease;
-} 
-
-.contacts-email:hover:after{
+/* .contacts-email:after,
+.contacs-number:after {
     content: '';
     width: 24.5vw;
-    height: 14px;
-    opacity: 0.5;
+    height: 7px;
+    opacity: 0.7;
     position: absolute;
-    background-color: blue;
+    background-color: var(--secondary-color);
     bottom: 0;
     left: 0;
     transition: all .3s ease;
-  } 
+} */
+
+
+/* .contacts-email:hover:after{
+    content: '';
+    width: 24.5vw;
+    height: 14px;
+    position: absolute;
+    background-color: white;
+    bottom: 0;
+    left: 0;
+    transition: all .3s ease;
+  }  */
+/* footer */
+#footer {
+    width: 100%;
+    height: 10vh;
+    border-top: 2px solid white;
+}
 
 /* ключевые кадры  */
 
-@keyframes skillsAnimatation {
-    0% {
-        opacity: 0;
-        transform: translateX(100px);
-        width: 30vw;
-    }
-
-    50% {}
-
-    100% {
-        opacity: 1;
-        transform: translateX(0);
-        width: 50vw;
-    }
-
-}
-
-
 @keyframes react {
     0% {
-        transform: rotate(0deg);
-        width: 18vw;
-
+        transform: rotate(0deg) scale(1);
     }
 
     50% {
-        width: 22vw;
-        left: calc(50% - 12vw);
-        top: calc(50% - 11vh);
+        transform: rotate(180deg) scale(1.2);
     }
 
     100% {
-        transform: rotate(360deg);
-        width: 18vw;
+        transform: rotate(360deg) scale(1);
     }
 }
 
@@ -448,4 +499,98 @@ nav ul {
 
     }
 
+}
+
+/* media */
+@media (max-width:500px) {
+    :root {
+        --main-font-size: 12px;
+        --header-font-size: 20px;
+    }
+
+    .header_menu {
+        display: flex;
+    }
+
+    .header_menu img {
+        width: 10vw;
+    }
+
+    nav {
+        display: none;
+        margin-left: 30vw;
+    }
+
+    .container {
+        width: 80vw;
+        margin: 0 auto;
+    }
+    /* main */
+    .main_preview_page {
+        height: 60vh;
+        margin-bottom: 5%;
+    }
+    .main_preview_page_title {
+        font-size: 2rem;
+        margin-bottom: 20%;
+    }
+    /* design elements */
+    #disign_element1 {
+        width: 60vw;
+        left: calc(50% - 30vw);
+        top: calc(50% - 15vh);
+    }
+    /* skills */ 
+   
+    .main_skills {
+        width: 100%;
+        height: 100%;
+    }
+    
+    .map_element {
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        /* background-color: #00EC34; */
+        background-color: var(--secondary-color);
+    }
+    
+    .map_line {
+        width: 2px;
+        height: 30vh;
+        background-color: grey;
+        margin-left: 2%;
+    }
+    
+    .map_name {
+        color: white;
+        font-family: var(--accent-font-family);
+        font-size: 0.8rem;
+    }
+    
+    .map_circle {
+        display: flex;
+        justify-content: center;
+        width: 200px;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .road_map {
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+    
+    }
+    .skills {
+        width: 30vw;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: space-between;
+        gap: 2px;
+        opacity: 1;
+        /* background-color: #cca33bd4; */
+    }
 }

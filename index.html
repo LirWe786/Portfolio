@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="./style/style.css">
     <script defer src="./src/index.js" type="module"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    
+
     <title>Portfolio</title>
 </head>
 
@@ -20,12 +20,22 @@
 
 
 
+
+
+    <div class="contact-window">
+        <button class="close-contact-window"><img src="./img/211651_close_round_icon.png" alt=""></button>
+        <input type="text" placeholder="Your name" name="" id="nameInput" class="contact-input">
+        <input type="email" placeholder="Your email" name="" id="emailInput" class="contact-input">
+        <input type="text" placeholder="Your number" name="" id="numInput" class="contact-input">
+        <button class="message-btn">Send</button>
+    </div>
+
     <div class="menu">
 
         <button class="close_menu"><img src="./img/211651_close_round_icon.png" alt=""></button>
 
-        <a href="">Skills</a>
-        <a href="">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#">Projects</a>
         <a href="#contacs">Contacts</a>
 
     </div>
@@ -46,6 +56,9 @@
             </ul>
 
         </nav>
+        <button class="contact-btn">
+            Wanna get in touch?
+        </button>
         <button class="header_menu">
             <img src="./img/menuBar2.png">
         </button>
@@ -60,18 +73,20 @@
         </section>
         <div class="container">
             <section class="main_skills" id="main_skills">
+
                 <section class="skills_languages animate_animated animate__fadeInUp">
                     <div class="road_map">
                         <div class="map_circle">
-                            <div  data-aos="flip-up" class="map_element">
+                            <div data-aos="flip-up" class="map_element">
                             </div>
                             <div class="map_name">Tools & Languages</div>
                         </div>
-                        <div class="map_line"></div>
+                        <div class="map_line" data-aos="fade-down"></div>
                     </div>
+
                     <div class="skills languagesSkillsDiv">
                         <div class="languages">
-                            <div  data-aos="fade-right" class="skills_html skills_languages_divs">
+                            <div data-aos="fade-right" class="skills_html skills_languages_divs">
                                 <img src="./img/html3D.png" id="skills_img_html" class="skills_imgs">
                                 <p class="html_p">HTML5</p>
                             </div>
@@ -84,6 +99,7 @@
                                 <p class="html_p">JS</p>
                             </div>
                         </div>
+
                         <div data-aos="fade-up" class="AI">
                             <div class="skills_blackbox AI_languages_divs">
                                 <p class="html_p">BlackBox AI Chat</p>
@@ -96,6 +112,8 @@
                     </div>
                     <!-- конент скилы -->
                 </section>
+
+                
                 <section class="skills_design ">
                     <div class="road_map">
                         <div class="map_circle">
@@ -107,15 +125,15 @@
                     </div>
                     <div class="skills designSkillsDiv">
                         <div class="disign_websites_div">
-                            <div data-aos="fade-up-left" class="Figma_div">
-                                <p class="desin_p">Figma</p>
-
+                            <div data-aos="fade-up-left" class="Figma_div tools-div">
+                                <p class="desing_p  ">Figma</p>
+                                <img src="./img/figma3D.png" alt="" class="skills_imgs" data-aos="flip-right">
                             </div>
-                            <!-- <div class="iconFinder_div">
-                                 <p class="desin_p">IconFinder</p>
-                            </div> -->
-                            <div  data-aos="fade-down-right" class="rudixUi_div">
-                                <p class="desin_p">Rudix UI</p>
+                            <div data-aos="fade-down-right" class="rudixUi_div tools-div">
+                                <p class="desing_p">Rudix UI</p>
+                                <img src="./img/radix-ui.svg" alt="" class="skills_imgs rudixUi-img"
+                                    data-aos="flip-left">
+
                             </div>
                         </div>
 
@@ -132,6 +150,14 @@
                         </div>
                         <div class="map_line"></div>
                     </div>
+                    <div class="other-div " data-aos="zoom-in">
+                        <div class="odsidian-div">
+                            <p class="desing_p">Obsidian</p>
+                            <img src="./img/obsidian-icon.png" alt="" class="skills_imgs">
+
+                        </div>
+
+                    </div>
                     <!-- конент design -->
                 </section>
 
@@ -140,19 +166,23 @@
             <section id="contacts" class="contacts">
                 <h2>Contacs</h2>
                 <div class="contac_div">
-                    <p class="contac_p">Want to contact me?</p>
-                    <div class="contacts_data">
+                    <p data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" class="contac_p">Want
+                        to contact me?</p>
+                    <div data-aos="flip-up" class="contacts_data">
                         <p class="contacts-email">Email - primak2020@gmail.com</p>
-                        <p>What'sApp & Telegam - +7 (988) 097 98 34</p>
+                        <p class="contacs-number">What'sApp & Telegam - +7 (988) 097 98 34</p>
                     </div>
                 </div>
             </section>
-            <section class="EndSection">
+            <sectiondata-aos="fade-up" data-aos-anchor-placement="top-center" class="EndSection">
                 <p class="end_p">Thank you for visit!</p>
-                
-            </section>
+
+                </section>
         </div>
-    </main>
+    </main>\
+    <footer id="footer">
+
+    </footer>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </body>
 
